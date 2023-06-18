@@ -3,6 +3,7 @@ fun main() {
 }
 
 fun testNullSafety() {
+    "Null safety".printColored(31)
     ////Null Safety
     var n1: Int? = 5
     /*
