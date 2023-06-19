@@ -1,7 +1,8 @@
 fun Any?.println() {
     println(this)
 }
- fun Any?.print() {
+
+fun Any?.print() {
     print(this)
 }
 
