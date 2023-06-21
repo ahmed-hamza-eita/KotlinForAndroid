@@ -1,3 +1,5 @@
+package Basics
+
 fun main() {
     ifStatement()
     whenStatement()

@@ -1,3 +1,5 @@
+package Basics
+
 fun main() {
     // permitAccess(19).println()
     //permitAccess(19, 18, 20, 22, 16).println()
