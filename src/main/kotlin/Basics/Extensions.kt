@@ -1,4 +1,5 @@
 package Basics
+
 fun main() {
     val x = 5
     (x.isEven()).println()
@@ -16,14 +17,12 @@ fun Any?.print() {
     print(this)
 }
 
-fun String.printColored(color: Int) {
+fun Any.printColored(color: Int) {
     println("\u001B[${color}m$this\u001B[0m")  //31 red color
 }
 
 fun Int.isEven() = this % 2 == 0
 fun Int.isOdd() = this % 2 != 0
-
-
 
 
 //InFix method (only have one parameter)
@@ -33,3 +32,13 @@ infix fun Int.addAndCheckEven(num: Int) =
 
 infix fun Int.addAndCheckOdd(num: Int) =
     (this + num).isOdd()
+
+
+fun List<Int>.myFilter(op: (Int) -> Boolean): MutableList<Int> {
+    val temp = mutableListOf<Int>()
+    for (i in this) {
+        if (op(i))
+            temp.add(i)
+    }
+    return temp
+}
