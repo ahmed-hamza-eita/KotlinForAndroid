@@ -1,5 +1,7 @@
-package Basics
+package Challenges
 
+import Basics.print
+import Basics.printColored
 import java.util.*
 
 fun main() {

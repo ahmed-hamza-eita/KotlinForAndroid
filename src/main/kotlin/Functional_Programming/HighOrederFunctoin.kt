@@ -53,4 +53,12 @@ fun flatMap() {
 
 fun zip() {
     "Zip".printColored(31)
+    val stringList = listOf("Welcome", "Ahmed", "Hamza")
+    val containCharA = listOf(false, true, true)
+    stringList.zip(containCharA).joinToString().println()
+
+
+
+    stringList.zip(stringList.map { it.contains('a', true) })
+        .println() //same output as above (instead creating another list)
 }
